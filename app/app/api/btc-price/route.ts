@@ -6,7 +6,7 @@ export async function GET() {
   try {
     const res = await fetch(
       `https://hermes.pyth.network/v2/updates/price/latest?ids[]=${FEED}`,
-      { next: { revalidate: 0 } }
+      { cache: "no-store" }
     );
     const data = await res.json() as any;
     const item = data.parsed?.[0];
