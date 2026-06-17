@@ -1,0 +1,13 @@
+{
+  "name": "raptor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:scheduler": "pnpm --filter @raptor/scheduler dev",
+    "dev:agents":    "pnpm --filter @raptor/agents dev:all",
+    "dev:app":       "pnpm --filter @raptor/app dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
