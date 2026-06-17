@@ -5,7 +5,12 @@
   "scripts": {
     "dev:scheduler": "pnpm --filter @raptor/scheduler dev",
     "dev:agents":    "pnpm --filter @raptor/agents dev:all",
-    "dev:app":       "pnpm --filter @raptor/app dev"
+    "dev": "cd app && npm run dev",
+    "build": "cd app && npm run build",
+    "start": "cd app && npm run start"
+  },
+  "dependencies": {
+    "next": "15.3.3"
   },
   "devDependencies": {
     "typescript": "^5.6.0"
